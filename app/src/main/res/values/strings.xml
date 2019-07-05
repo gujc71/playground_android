@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">우리동네, 아이랑 놀곳 Ver.서울</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">우리동네, 아이랑 놀곳 Ver.서울</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">홈</string>
+    <string name="menu_myTown">우리동네</string>
+    <string name="menu_course">추천코드</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro">우리동네, 아이랑 놀곳 (Ver.서울)은 서울 시내에서 아이랑 갈만한 실내외 놀이터, 박물관/미술관, 도서관등의 장소(약 3,700군데)들을 모아서, 일목요연하게 보여 주는 웹 사이트로 2가지 기능을 제공하고 있습니다.</string>
+    <string name="introMytown">지도상에서 보고싶은 지역의 좌표(위도, 경도)를 지정하면, 좌표를 중심으로 2Km 내의 시설/장소 정보 표시</string>
+    <string name="introCourse">특정 장소를 중심으로 갈만한 장소들을 묶어서 하나의 코스로 정리</string>
+
+    <string name="msg_search">지도에 표시된 마커를 이동시켜(지도 클릭등), 데이터를 조회할 위치를 지정하세요.</string>
+    <string name="msg_wait">잠시만 기다려 주세요 ...</string>
+    <string name="msg_networkError">데이터를 가지고 올 수 없습니다.\n잠시뒤에 다시 접속해 주세요.</string>
+
+</resources>
