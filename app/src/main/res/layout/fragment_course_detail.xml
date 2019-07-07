@@ -62,16 +62,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp">
 
-                <TextView
+                <!--TextView
                     android:id="@+id/cmdesc"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <!--WebView
+                    android:layout_height="wrap_content" /-->
+                <WebView
                     android:id="@+id/cmdesc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:screenOrientation="portrait"
-                    tools:ignore="WebViewLayout" /-->
+                    tools:ignore="WebViewLayout"/>
 
             </android.support.v7.widget.CardView>
 

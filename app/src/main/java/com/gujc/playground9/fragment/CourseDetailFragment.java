@@ -7,8 +7,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,9 +26,6 @@ import com.gujc.playground9.common.CourseMstVO;
 import com.gujc.playground9.common.MapVO;
 import com.gujc.playground9.common.RetrofitAPI;
 
-import net.daum.mf.map.api.MapPOIItem;
-import net.daum.mf.map.api.MapView;
-
 import java.util.ArrayList;
 
 import retrofit2.Call;
@@ -46,7 +41,7 @@ public class CourseDetailFragment extends Fragment {
     private String cmno;
     private ArrayList<MapVO> courseList = new ArrayList<MapVO>();
 
-    private TextView cmdesc;
+    private WebView cmdesc;
     private TextView cmtitle;
     private RecyclerView recyclerView;
 
@@ -81,10 +76,11 @@ public class CourseDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_course_detail, container, false);
+
+
         cmtitle = view.findViewById(R.id.cmtitle);
         cmdesc = view.findViewById(R.id.cmdesc);
-        //cmdesc.setHorizontalScrollBarEnabled(false);
-        cmdesc.setMovementMethod(LinkMovementMethod.getInstance());
+        cmdesc.setHorizontalScrollBarEnabled(false);
 
         infoView = view.findViewById(R.id.infoView);
         pgname = view.findViewById(R.id.pgname);
@@ -122,8 +118,7 @@ public class CourseDetailFragment extends Fragment {
             JsonElement result = response.body();
             CourseMstVO courseInfo = new Gson().fromJson(result, CourseMstVO.class);
             cmtitle.setText(courseInfo.cmtitle);
-            cmdesc.setText(Html.fromHtml(courseInfo.cmdesc));
-            //cmdesc.loadData(courseInfo.cmdesc, "text/html", "UTF-8");
+            cmdesc.loadUrl(RetrofitAPI.SERVER_URL+"show/courseDescService?cmno="+cmno);
         }
 
         @Override
