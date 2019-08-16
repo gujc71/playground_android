@@ -175,7 +175,7 @@ public class MytownMapFragment extends Fragment {
             String a = mapInfo.pgno;
 
             MapPoint mp = MapPoint.mapPointWithGeoCoord(mapInfo.pglat, mapInfo.pglon);
-            MapPOIItem  marker = new MapPOIItem();
+            MapPOIItem marker = new MapPOIItem();
             marker.setItemName(a);
             marker.setTag(i);
             marker.setMapPoint(mp);
