@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="07b309f771403d144a6a99d97efb5a0a"/>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value=""/>
 
         <activity
             android:name=".MainActivity"
